@@ -4,6 +4,7 @@ const bcrypt = require('bycryptsjs');
 
 const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$/;
 
+//object 'authCOntroller'
 const authController = {
     async register(req, res, next) {
       // 1. validate user input
